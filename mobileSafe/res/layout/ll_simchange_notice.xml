@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/background"
+    >
+    <LinearLayout 
+        android:id="@+id/title_changesim"
+        android:layout_alignParentTop="true"
+    android:layout_width="fill_parent"
+    android:layout_height="40dip" 
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:background="@drawable/main_tittle_background"
+
+  
+    >
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:textSize="24sp"
+        android:text="@string/sim_change_notice"
+        android:gravity="center_vertical"
+      
+        android:textColor="#FFFFFF"
+        />
+    
+</LinearLayout>
+<TextView 
+    android:layout_marginTop="10dip"
+    android:layout_below="@id/title_changesim"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:singleLine="false"
+    android:textColor="@color/txt_white"
+   android:text="@string/txt_simchange_description"
+    />
+<Button 
+      android:onClick="returnBack"
+    android:layout_alignParentBottom="true"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/btn_text_return"
+    android:layout_marginBottom="5dip"
+    android:gravity="center_vertical|center_horizontal"
+    />
+</RelativeLayout>

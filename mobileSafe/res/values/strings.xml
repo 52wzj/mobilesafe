@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">贾山手机卫士</string>
+    <string name="action_settings">Settings</string>
+    <string name="splash_version">版本号:</string>
+    <string name="tv_pass_txt">密码:</string>
+    <string name="tv_confir_pass_txt">密码确认:</string>
+    <string name="tv_input_pass_txt">请输入密码:</string>
+    <string name="tv_dialogTittle_pass_txt">输入密码</string>
+    <string name="sub_title_safe">手机防盗</string>
+    <string name="txt_help">帮助</string>
+    <string name="txt_lose_protect_start">立即开启</string>
+    <string name="txt_protect_state_close">防盗保护已关闭</string>
+    <string name="setup_guilde3_rem">您可以在这里设置一个熟悉的手机号作为安全号码,当您的手机不慎丢失后,您可以通过该手机发送简单的指令对您的手机 进行远程操控</string>
+    <string name="lose_protect_order">防盗指令</string>
+    <string name="lose_protect_setting">防盗设置</string>
+    <string name="lose_pro_located">手机定位</string>
+    <string name="lose_pro_destroy">销毁数据</string>
+    <string name="lose_pro_lockCamara">锁定屏幕</string>
+    <string name="lose_pro_warnRing">发报警音</string>
+    <string name="lose_pro_sendSms">换卡短信通知</string>
+    <string name="lose_pro_started">防盗保护已开启</string>
+    <string name="lose_pro_state">正在保护您手机的安全</string>
+    <string name="sim_change_notice">换卡短信通知</string>
+    <string name="btn_text_return">返回</string>
+    <string name="txt_simchange_description">手机被盗后,如果SIM卡发生更换,会向您的安全手机发送一条提示短信 \n\n
+        您可以通过该短信获取被盗手机的新号码,然后发送指令来遥控被盗手机</string>
+    <string name="btn_location_expirence">体验</string>
+    <string name="txt_location_method">手机被盗后,可用任意手机发送手机定位指令到被盗手机 ,获取手机当前位置 ,帮助找回手机。\n\n
+        当定位手机成功后,会将手机当前所在位置发送给您</string>
+    <string name="txt_location_order_sample">*定位手机的指令是:#*dingwei*#防盗密码</string>
+    <string name="txt_experience_dialog_title">体验定位</string>
+    <string name="txt_location_opration_remind">点击链接查看手机位置</string>
+    <string name="txt_fact_opration_remind">*实际操作时会通过短信发送</string>
+    <string name="located_phone">定位手机</string>
+    <string name="lockScreen_phone">锁定手机</string>
+    <string name="lock_opration_introduce">锁定被盗手机的屏幕，防止他人非法使用您的手机</string>
+    <string name="txt_lock_order_sample">* 锁定拍照的指令是：suoding#防盗密码</string>
+    <string name="txt_delete_method">手机被盗后，用安全手机号发送销毁指令到被盗手机，可彻底销毁手机数据，保护隐私不被泄露。\n\n 销毁的数据包括：通讯录、短信、照片、及SD卡的其他数据。\n\n特别提醒：销毁数据指令必须使用安全手机号发送</string>
+    <string name="txt_delete_method_notice">*销毁数据的指令是：xiaohui#防盗密码</string>
+    <string name="txt_delete_data">删除数据</string>
+    <string name="txt_alarm_title">发报警音</string>
+     <string name="txt_alarm_introduce">发觉手机被盗后，可用任意手机发送报警指令到被盗手机。\n\n这时被盗手机将会发出最大音量的报警声（即使是静音模式），帮您快速找到手机。</string>
+      <string name="txt_alarm_order">*发报警音的指令是：baojing#防盗密码</string>
+
+</resources>

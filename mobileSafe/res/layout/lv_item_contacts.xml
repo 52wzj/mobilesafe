@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+           style="@style/lv_item_contact_tv"
+            android:text="姓名:"
+            android:textColor="#f7f3f7" />
+
+        <TextView
+            android:layout_marginLeft="10dip"
+            android:id="@+id/tv_contact_name"
+            android:layout_width="wrap_content"
+            style="@style/lv_item_contact_tv"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        style="@style/lv_item_contact_tv"
+        android:layout_weight="1.0"
+        android:gravity="center_vertical" >
+
+        <TextView
+            style="@style/lv_item_contact_tv"
+            android:layout_width="wrap_content"
+            android:text="电话:" />
+
+        <TextView
+            android:layout_marginLeft="10dip"
+            android:id="@+id/tv_tel_number"
+            style="@style/lv_item_contact_tv"
+            android:layout_width="match_parent" />
+    </LinearLayout>
+
+</LinearLayout>

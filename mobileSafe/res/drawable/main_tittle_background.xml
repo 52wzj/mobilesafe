@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    
+    android:shape="rectangle" >
+    <stroke 
+        android:color="#ff212021"
+        android:width="0.5dip"
+        />
+    <corners
+        android:radius="2dip"
+        ></corners>
+<solid
+    android:color="@color/background"
+    ></solid>
+
+<gradient
+    android:startColor="#ff39454A"
+    android:endColor="#ff070809"
+    android:centerColor="#ff42454A"
+    ><!-- 设置渐变 --></gradient>
+</shape>

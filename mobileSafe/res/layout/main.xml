@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:orientation="vertical"
+    android:background="@color/background"
+    >
+<LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="40dip" 
+    android:orientation="horizontal"
+    android:gravity="center_vertical|center_horizontal"
+    android:background="@drawable/main_tittle_background"
+
+  
+    >
+    <TextView 
+        android:id="@+id/tv_main_titile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:text="山寨手机卫士"
+        android:textColor="#FFFFFF"
+        />
+    
+</LinearLayout>
+    <GridView 
+        android:id="@+id/gv_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="3"
+        android:horizontalSpacing="1dip"
+        android:verticalSpacing="1dip"
+        ></GridView>
+
+    </LinearLayout>

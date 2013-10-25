@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+     >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:background="@drawable/main_tittle_background"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_main_titile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sub_title_safe"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp" />
+    </RelativeLayout>
+        <ListView
+           
+            android:id="@+id/lv_lose_protect_setting"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </ListView>
+
+      
+
+</LinearLayout>

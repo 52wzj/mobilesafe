@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/title_changesim"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/main_tittle_background"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="5dip" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:text="@string/lockScreen_phone"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/location_desc"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_changesim"
+        android:layout_marginTop="10dip"
+        android:padding="5dip"
+        android:singleLine="false"
+        android:text="@string/lock_opration_introduce"
+        android:textColor="@color/txt_white" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/location_desc"
+        android:layout_marginTop="10dip"
+        android:padding="5dip"
+        android:text="@string/txt_lock_order_sample"
+        android:textColor="@color/txt_white"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dip"
+        android:orientation="horizontal"
+        android:padding="5dip" >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button_selector"
+            android:onClick="expir"
+            android:text="@string/btn_location_expirence" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_weight="1"
+            android:background="@drawable/button_selector"
+            android:gravity="center_vertical|center_horizontal"
+            android:onClick="returnBack"
+            android:text="@string/btn_text_return" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/setguid_title_txt"
+        android:text="1.开启保护完成设置"
+        android:textSize="28sp" />
+
+    <ImageView
+        style="@style/setguid_divide_line"
+        android:layout_marginTop="5dip" />
+
+    <TextView
+        style="@style/setguid_title_txt"
+        android:layout_margin="10dip"
+        android:layout_marginTop="10dip"
+        android:text="为了您的安全 强烈建议您立即开启保护:"
+        android:textSize="22sp" />
+
+    <Button
+        android:id="@+id/btn_start_protect"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:background="@drawable/button_selector"
+        android:text="立即开启" />
+
+    <Button
+        android:id="@+id/btn_hold_protect"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:background="@drawable/button_selector"
+        android:text="暂不开启" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal" >
+
+        <ImageView style="@style/setguid_progress_img" />
+
+        <ImageView style="@style/setguid_progress_img" />
+
+        <ImageView style="@style/setguid_progress_img" />
+
+        <ImageView style="@style/setguid_current_progress_img" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dip"
+        android:gravity="center_vertical|center_horizontal" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|center_horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/main_status_baohu" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

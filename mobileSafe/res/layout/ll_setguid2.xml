@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/setguid_title_txt"
+        android:text="2.绑定sim卡"
+        android:textSize="28sp" />
+
+    <ImageView
+        style="@style/setguid_divide_line"
+        android:layout_marginTop="5dip" />
+
+    <TextView
+        style="@style/setguid_title_txt"
+        android:layout_marginTop="10dip"
+        android:text="在此可以设置sim卡绑定 \n sim卡绑定后可以在sim卡 \n 被更换后发送报警信息"
+        android:textSize="22sp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/setguid_txt_item"
+            android:layout_width="wrap_content"
+            android:text="当前状态为:" />
+
+        <CheckBox
+            android:id="@+id/cb_sim_bind_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="未绑定"
+            android:textColor="#ff0000" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_bind_sim"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:background="@drawable/button_selector"
+        android:text="绑定" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal" >
+
+        <ImageView style="@style/setguid_progress_img" />
+
+        <ImageView style="@style/setguid_current_progress_img" />
+
+        <ImageView style="@style/setguid_progress_img" />
+
+        <ImageView style="@style/setguid_progress_img" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dip"
+        android:gravity="center_vertical|center_horizontal" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|center_horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/bind" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_guide2_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="15dip"
+            android:background="@drawable/button_selector"
+            android:drawableRight="@drawable/next"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="下一步"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btn_guide2_pre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="15dip"
+            android:background="@drawable/button_selector"
+            android:drawableLeft="@drawable/previous"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="上一步"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+</LinearLayout>

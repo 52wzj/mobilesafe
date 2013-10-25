@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cn.had.mobilesafe"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="17" />
+
+    <instrumentation
+        android:name="android.test.InstrumentationTestRunner"
+        android:targetPackage="cn.had.mobilesafe" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW" />
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="cn.had.mobilesafe.ui.SplashActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cn.had.mobilesafe.ui.MainActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="cn.had.mobilesafe.ui.MobileSafeActivety"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity android:name="cn.had.mobilesafe.ui.MobileSafeSetUpActivity" >
+        </activity>
+        <activity android:name="cn.had.mobilesafe.ui.MobileSafeSetUp2Activity" >
+        </activity>
+        <activity android:name="cn.had.mobilesafe.ui.MobileSafeSetUp3Activity" >
+        </activity>
+        <activity android:name="cn.had.mobilesafe.ui.MobileSafeSetUp4Activity" >
+        </activity>
+        <activity android:name="cn.had.mobilesafe.ui.ViewContactsActivity" >
+        </activity>
+        <activity android:name="cn.had.mobilesafe.ui.ChangeSimDescActivity" >
+        </activity>
+        <activity android:name="cn.had.mobilesafe.ui.LocationDescriptionActivity" >
+        </activity>
+        <activity android:name="cn.had.mobilesafe.ui.DeleteAllDataActivity" />
+        <activity android:name="cn.had.mobilesafe.ui.LockScreenIntroduceActivity" />
+        <activity android:name="cn.had.mobilesafe.ui.PlayAlarmFunctionActivity" />
+        <activity android:name="cn.had.mobilesafe.ui.LoseProtectSetting" />
+
+        <receiver android:name="cn.had.mobilesafe.receiver.PhoneCallReceiver" >
+            <intent-filter android:priority="1000" >
+                <action android:name="android.intent.action.NEW_OUTGOING_CALL" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="cn.had.mobilesafe.receiver.SMSReceiver" >
+            <intent-filter android:priority="1000" >
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="cn.had.mobilesafe.receiver.MyBootReceiver" >
+            <intent-filter android:priority="1000" >
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="cn.had.mobilesafe.receiver.MyDeviceReceiver" >
+            <meta-data
+                android:name="android.app.device_admin"
+                android:resource="@xml/my_admin" />
+
+            <intent-filter>
+                <action android:name="android.app.action.DEVICE_ADMIN_ENABLED" >
+                </action>
+            </intent-filter>
+        </receiver>
+
+        <service android:name="cn.had.mobilesafe.engine.UpdateInfoService" >
+        </service>
+
+        <uses-library android:name="android.test.runner" />
+    </application>
+
+</manifest>
